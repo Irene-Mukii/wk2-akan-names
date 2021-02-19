@@ -1,21 +1,28 @@
-# {Application Name}
-#### {Brief description of application}, {Date of current version}
-#### By **{List of contributors}**
+# AKAN NAME GENERATOR
+#### This application uses your gender and date of birth tho generate for you what your Ghanian name would be.
+### 
+#### By **IRENE MUKII**
+#
 ## Description
-{This is a detailed description of your application, including its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }
+In ghana children are named according to the dayof the week they were born. 
+Don't worry I know you probably dont remember the day, leave that to us.
+#
+
 ## Setup/Installation Requirements
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
-## Known Bugs
-{Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
+* You need Internet to generate your Akan name
+* You will also need to input your gender
+* Lastly you will need to input your date of birth
+
+#
 ## Technologies Used
-{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}
+This application has been implemented using the following languages
+* HTML
+* CSS 
+* JavaScript
+#
 ## Support and contact details
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
-### License
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-Copyright (c) {year} **{List of contributors or company name}**
+If you have any concerns please reach outthrough the following platforms
+* EMAIL: abc@gmail.com 
+* PHONE NUMBER: 0707123567
+#
+## [License](/home/ronnie/Documents/moringa-school-projects/wk2-akan-names/LICENSE)
