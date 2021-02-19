@@ -11,8 +11,9 @@
 <body>
   <div class="container">
   <h2>DESCRIPTION</h2>
-  <p>This application takes in your date of birth and outputs your Akan name depending on your date of birth.</p>
-  <form action="">
+  <p>This application takes in your date of birth and outputs your Akan name depending on your date of birth and gender.</p>
+  
+  <form name="inputForm" method="get" oninput="">
     <input type="checkbox" name="gender" id="male">
     <label for="male">Male</label>
     <input type="checkbox" name="gender" id="female">
@@ -21,15 +22,21 @@
     <label for="date">Date</label> <br>
     <input type="text" id="date" name="date">
     <br>
-    <label for="month">Month</label> <br>
+    <label for="month">Month in numeric form</label> <br>
     <input type="text" id="month" name="month">
     <br>
     <label for="year">year</label> <br>
     <input type="text" id="year" name="year">
     <br> <br>
-    <input type="submit" value="Submit">
+    <input type="submit" name="Submit" value="Submit" 
+    onsubmit="inputResults(this.form)">
+    <output name="day" for="date month year"></output>
   </form>
+  <br>
+  <div>
+    <p id="output">Our result goes here</p>
   </div>
-  <script src="/js/scripts.js"></script>
+  </div>
+  <script src="/home/ronnie/Documents/moringa-school-projects/wk2-akan-names/js/scripts.js"></script>
 </body>
 </html>
