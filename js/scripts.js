@@ -1,6 +1,5 @@
 console.log("It works");
-let femaleNames = [];
-let maleNames = [];
+
 
 
 
@@ -8,16 +7,16 @@ let maleNames = [];
   //e.preventDefault();
 //});
 
-function inputResults(){
- let outputTag = document.getElementById('output');
- let date = document.inputform.date.value
-   let gender = document.getElementById('gender').value
+//function inputResults(event){
+//   let outputTag = document.getElementById('output');
+//   let date = document.inputform.date.value
+//   let gender = document.getElementById('gender').value
 
-   let myBirthDay = new Date('date').toDateString();
-   let day = myBirthDay.split(' ')[0];
+//   let myBirthDay = new Date('date').toDateString();
+//   let day = myBirthDay.split(' ')[0];
 
-   let message = `HEY!Seeing as you were born on ${day} and you are a ${gender}: `;
-   outputTag.innerHTML = message;  
+//   let message = `HEY!Seeing as you were born on ${day} and you are a ${gender}: `;
+//   outputTag.innerHTML = message;  
 
 // if (gender=== male){
 //   if (day === monday){
@@ -53,7 +52,7 @@ function inputResults(){
 //       return "Your Akan name is Ama"
 //     }
 //     }
-}
+// }
 
 // confirming that input is valid
 // function validateForm(){
