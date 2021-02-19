@@ -3,13 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/styles.css">
   <title>AKAN NAME GENERATOR</title>
 </head>
+  <img src="./images/Vintage Typewriter LinkedIn Banner.png" alt="Akan name generator body">
 <body>
-  <h1>AKAN NAME GENERATOR</h1>
+  <div class="container">
   <h2>DESCRIPTION</h2>
-  <p>This application takes in your date of birth and outputs your Akan name depending on your date of birth</p>
+  <p>This application takes in your date of birth and outputs your Akan name depending on your date of birth.</p>
+  <form action="">
+    <input type="checkbox" name="gender" id="male">
+    <label for="male">Male</label>
+    <input type="checkbox" name="gender" id="female">
+    <label for="female">Female</label>
+    <br>
+    <label for="date">Date</label> <br>
+    <input type="text" id="date" name="date">
+    <br>
+    <label for="month">Month</label> <br>
+    <input type="text" id="month" name="month">
+    <br>
+    <label for="year">year</label> <br>
+    <input type="text" id="year" name="year">
+    <br> <br>
+    <input type="submit" value="Submit">
+  </form>
+  </div>
   <script src="/js/scripts.js"></script>
 </body>
 </html>
