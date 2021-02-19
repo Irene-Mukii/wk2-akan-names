@@ -1,29 +1,56 @@
 console.log("It works");
 
- let outputTag = document.getElementById('output')
- console.log(outputTag)
 
- let message = 'HEY! MISS AFRICA'
+function inputResults(event){
+  let outputTag = document.getElementById('output');
+  let date = document.getElementById('date').value
+  let gender = document.getElementById('gender').value
 
- outputTag.innerHTML = message;
+  let myBirthDay = new DragEvent(date);
+  let day = myBirthDay.split(' ')[0];
 
-// checking if the input has been read
+  let message = `HEY!Seeing as you were born on ${day} and you are a ${gender}: `;
+  outputTag.innerHTML = message;  
 
-var date = form.date.value;
-var month = form.month.value;
-var year = form.year.value;
-var gender = form.gender.value;
+if (gender=== male){
+  if (day === monday){
+    return "Your Akan name is Kwasi"
+  }else if (day === tuesday){
+    return "Your Akan name is Kwadwo"
+  } else if (day === wednesday) {
+    return "Your Akan name is Kwabena"
+  } else if (day === thurday) {
+    return "Your Akan name is Kwaku"
+  } else if (day === friday) {
+    return "Your Akan name is Yaw"
+  } else if (day === saturday) {
+    return "Your Akan name is Kofi"
+  } else if (day === sunday) {
+    return "Your Akan name is Kwame"
+  }
 
-function inputResults(form){
-  alert ("Your date of birth is: " + date + month + "and you are a " + gender);
+}else {
+    if (day === monday) {
+      return "Your Akan name is Akosua"
+    } else if (day === tuesday) {
+      return "Your Akan name is Adwoa"
+    } else if (day === tuesday) {
+      return "Your Akan name is Abenaa"
+    } else if (day === tuesday) {
+      return "Your Akan name is Akua"
+    } else if (day === tuesday) {
+      return "Your Akan name is Yaa"
+    } else if (day === tuesday) {
+      return "Your Akan name is Afua"
+    } else if (day === tuesday) {
+      return "Your Akan name is Ama"
+    }
+    }
 }
-
-//Changing input to intergers
-var date = parseInt();
-var month = parseInt();
-var year = parseInt();
 
 // confirming that input is valid
 function validateForm(){
-  if (date <= 0 || date > 31 && month <= 0 || month>12) { alert("Please confirm the date and month is a valid one")  
-};
+
+  if (date <= 0 || date > 31 && month <= 0 || month>12) {
+     alert("Please confirm the date and month is a valid one")}  
+}
