@@ -1,6 +1,5 @@
-console.log('It works');
-  let outputTag = document.getElementById('output');
-  let akanName = document.getElementById('akanName');
+let outputTag = document.getElementById('output');
+let akanName = document.getElementById('akanName');
 
 let femaleAkanNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
 let maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
@@ -9,16 +8,14 @@ let maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwam
     event.preventDefault()
     let gender = document.querySelector('input[name = gender]:checked').value;
     let date = document.getElementById('date').value;
-
-    
     let myBirthDay = new Date(date).toDateString();
-    let currentDate = new Date().toDateString();
-    console.log(currentDate);
+    console.log(new Date());
     console.log(myBirthDay);
-    if (myBirthDay > currentDate) {
-      console.log("Birth date cannot be later than current date");
+
+    if (new Date(date) > new Date()) {
+      alert("Birth date cannot be later than current date");
       //RESET!!!!
-    }
+    }else{
     let day = myBirthDay.split(' ')[0];
     let message = `Seeing as You were born on ${day} and you are ${gender}`;
     outputTag.innerHTML = message;
@@ -44,7 +41,7 @@ let maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwam
         
         name = maleAkanNames[5];
       } else {
-        alert("YOUR AKAN NAME IS " + maleAkanNames[6])
+      
         name = maleAkanNames[6];
       }
     }else {
@@ -68,11 +65,12 @@ let maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwam
         name = femaleAkanNames[5];
       } else {
         
-      name = console.log(femaleAkanNames[6]);}
+      name = femaleAkanNames[6];}
     }
     akanName.innerHTML = `Your akan Name is ${name}`; //change input
     alert("YOUR AKAN NAME IS " + name);
   }
+}
   
 
 //function inputResults(event){
