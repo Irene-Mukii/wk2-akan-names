@@ -5,20 +5,25 @@ let maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwam
 
 function getInput(event){
   event.preventDefault()
-  let gender = document.querySelector('input[name = gender]:checked').value;
+  let gender = document.querySelector('input[name = gender]:checked');
   let date = document.getElementById('date').value;
   let myBirthDay = new Date(date).toDateString();
+console.log(gender);
+console.log(date);
 
   if (new Date(date) > new Date()) {
     alert("Birth date cannot be later than current date");
     document.getElementById("inputForm").reset();
+  } else if (gender === 'null' || date === ''){
+    alert("Date or Gender cannot be void, please input your date and gender")
   }else{
     let day = myBirthDay.split(' ')[0];
-    let message = `Seeing as You were born on ${day} and you are ${gender}`;
+    let myGender = gender.value;
+    let message = `Seeing as You were born on ${day} and you are ${myGender}`;
     outputTag.innerHTML = message;
     let name;
 
-    if(gender === 'male' ){
+    if(myGender === 'male' ){
       if(day === 'Sun'){
         name = maleAkanNames[0];
       } else if(day === 'Mon'){
