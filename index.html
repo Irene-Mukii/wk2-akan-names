@@ -13,23 +13,23 @@
   <h2>DESCRIPTION</h2>
   <p>This application takes in your date of birth and outputs your Akan name depending on your date of birth and gender.</p>
   <div class="form">
-  <form name="inputForm"method="GET" onsubmit="inputResults()">
-    <select name="gender" id="gender" placeholder="Select Gender">
-      <option name="Male">Male</option>
-      <option name="female">Female</option>
-    </select>
+  <form name="inputForm"method="GET" onsubmit="getInput(event)">
+    <label for="gender">Male</label>
+    <input type="radio" id="gender" name="gender" value='male'>
+    <label for="gender">Female</label>
+    <input type="radio" id="gender" name="gender"value='female'>
     <br>
     <label for="date">Date</label> <br>
     <input type="date" id="date" name="date">
     <br> <br>
-    <input type="submit" name="Submit" value="Submit" onsubmit="inputResults(this.form)">
+    <input type="submit" name="Submit" value="Submit">
   </form>
   </div>
   <br>
   <div class="cotainer border">
     <br>
     <p id="output">Click Submit to view your results.</p>
-    <p id="output2">Your Akan name will appear here.</p>
+    <p>Your Akan name will appear here.</p>
   </div>
   </div>
   <script src="./js/scripts.js"></script>
