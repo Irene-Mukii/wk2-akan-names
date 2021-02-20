@@ -5,7 +5,7 @@
 #
 ## HERES A PREVIEW OF WHAT THE APPLICATION LOOKS LIKE 
 
-Image.
+[Video Demo](/home/ronnie/Documents/moringa-school-projects/wk2-akan-names/images/akan-generator-demo.gif)
 
 #
 ## Description
@@ -21,7 +21,7 @@ Don't worry I know you probably dont remember the day, leave that to us.
 ## Behavior Driven Development
 This is how I broke down the problem statement to come up with this Amzing Application:
 
-* User would need to Input date of birth and gender - through forms (html input )
+* User would need to Input date of birth and gender - through forms (html input)
 * Computer could read and store the data inputed. - I used JavaScript functions and variables to make this happen.
 * Check if the date entered is valid
 * Alert the user if input is invalid
