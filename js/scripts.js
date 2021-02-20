@@ -1,11 +1,14 @@
-console.log("It works");
+console.log('It works');
   let outputTag = document.getElementById('output');
   let akanName = document.getElementById('akanName');
+
+let femaleAkanNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+let maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
 
   function getInput(event){
     event.preventDefault()
     let gender = document.querySelector('input[name = gender]:checked').value;
-    let date = document.getElementById("date").value;
+    let date = document.getElementById('date').value;
     
     let myBirthDay = new Date(date).toDateString();
     let day = myBirthDay.split(' ')[0];
@@ -29,36 +32,36 @@ console.log("It works");
 
 // if (gender=== male){
 //   if (day === monday){
-//     return "Your Akan name is Kwasi"
+//     return 'Your Akan name is Kwasi'
 //   }else if (day === tuesday){
-//     return "Your Akan name is Kwadwo"
+//     return 'Your Akan name is Kwadwo'
 //   } else if (day === wednesday) {
-//     return "Your Akan name is Kwabena"
+//     return 'Your Akan name is Kwabena'
 //   } else if (day === thurday) {
-//     return "Your Akan name is Kwaku"
+//     return 'Your Akan name is Kwaku'
 //   } else if (day === friday) {
-//     return "Your Akan name is Yaw"
+//     return 'Your Akan name is Yaw'
 //   } else if (day === saturday) {
-//     return "Your Akan name is Kofi"
+//     return 'Your Akan name is Kofi'
 //   } else if (day === sunday) {
-//     return "Your Akan name is Kwame"
+//     return 'Your Akan name is Kwame'
 //   }
 
 // }else {
 //     if (day === monday) {
-//       return "Your Akan name is Akosua"
+//       return 'Your Akan name is Akosua'
 //     } else if (day === tuesday) {
-//       return "Your Akan name is Adwoa"
+//       return 'Your Akan name is Adwoa'
 //     } else if (day === tuesday) {
-//       return "Your Akan name is Abenaa"
+//       return 'Your Akan name is Abenaa'
 //     } else if (day === tuesday) {
-//       return "Your Akan name is Akua"
+//       return 'Your Akan name is Akua'
 //     } else if (day === tuesday) {
-//       return "Your Akan name is Yaa"
+//       return 'Your Akan name is Yaa'
 //     } else if (day === tuesday) {
-//       return "Your Akan name is Afua"
+//       return 'Your Akan name is Afua'
 //     } else if (day === tuesday) {
-//       return "Your Akan name is Ama"
+//       return 'Your Akan name is Ama'
 //     }
 //     }
 // }
@@ -67,5 +70,5 @@ console.log("It works");
 // function validateForm(){
 
 //   if (date <= 0 || date > 31 && month <= 0 || month>12) {
-//      alert("Please confirm the date and month is a valid one")}  
+//      alert('Please confirm the date and month is a valid one')}  
 // }
