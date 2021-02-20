@@ -12,8 +12,9 @@ function getInput(event){
   if (new Date(date) > new Date()) {
     alert("Birth date cannot be later than current date");
     document.getElementById("inputForm").reset();
-  } else if (gender === 'null' || date === ''){
+  } else if (gender === null || date === ''){
     alert("Date or Gender cannot be void, please input your date and gender")
+    document.getElementById("inputForm").reset();
   }else{
     let day = myBirthDay.split(' ')[0];
     let myGender = gender.value;
