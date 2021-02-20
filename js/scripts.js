@@ -14,8 +14,10 @@ let maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwam
     let myBirthDay = new Date(date).toDateString();
     let currentDate = new Date().toDateString();
     console.log(currentDate);
-    if (myBirthDay>currentDate) {
+    console.log(myBirthDay);
+    if (myBirthDay > currentDate) {
       console.log("Birth date cannot be later than current date");
+      //RESET!!!!
     }
     let day = myBirthDay.split(' ')[0];
     let message = `Seeing as You were born on ${day} and you are ${gender}`;
@@ -24,37 +26,52 @@ let maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwam
 
     if(gender === 'male' ){
       if(day === 'Sun'){
-        name = console.log(maleAkanNames[0]);
+        
+        name = maleAkanNames[0];
       } else if(day === 'Mon'){
-        name = console.log(maleAkanNames[1]);
+        
+        name = maleAkanNames[1];
       } else if (day === 'Tue') {
-        name = console.log(maleAkanNames[2]);
+        
+        name = maleAkanNames[2];
       } else if (day === 'Wed') {
-        name = console.log(maleAkanNames[3]);
+        
+        name = maleAkanNames[3];
       } else if (day === 'Thu') {
-        name = console.log(maleAkanNames[4]);
+        
+        name = maleAkanNames[4];
       } else if (day === 'Fri') {
-        name = console.log(maleAkanNames[5]);
+        
+        name = maleAkanNames[5];
       } else {
-        name = console.log(maleAkanNames[6]);
+        alert("YOUR AKAN NAME IS " + maleAkanNames[6])
+        name = maleAkanNames[6];
       }
     }else {
       if (day === 'Sun') {
-        name = console.log(femaleAkanNames[0]);
+        
+        name = femaleAkanNames[0];
       } else if (day === 'Mon') {
-        name = console.log(femaleAkanNames[1]);
+        
+        name = femaleAkanNames[1];
       } else if (day === 'Tue') {
-        name = console.log(femaleAkanNames[2]);
+        
+        name = femaleAkanNames[2];
       } else if (day === 'Wed') {
-        name = console.log(femaleAkanNames[3]);
+        
+        name = femaleAkanNames[3];
       } else if (day === 'Thu') {
-        name = console.log(femaleAkanNames[4]);
+        
+        name = femaleAkanNames[4];
       } else if (day === 'Fri') {
-        name = console.log(femaleAkanNames[5]);
+        
+        name = femaleAkanNames[5];
       } else {
+        
       name = console.log(femaleAkanNames[6]);}
     }
     akanName.innerHTML = `Your akan Name is ${name}`; //change input
+    alert("YOUR AKAN NAME IS " + name);
   }
   
 
