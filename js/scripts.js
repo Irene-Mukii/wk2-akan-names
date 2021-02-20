@@ -14,6 +14,7 @@ let maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwam
 
     if (new Date(date) > new Date()) {
       alert("Birth date cannot be later than current date");
+      document.getElementById("inputForm").reset();
       //RESET!!!!
     }else{
     let day = myBirthDay.split(' ')[0];
