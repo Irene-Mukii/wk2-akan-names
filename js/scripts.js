@@ -8,8 +8,6 @@ function getInput(event){
   let gender = document.querySelector('input[name = gender]:checked');
   let date = document.getElementById('date').value;
   let myBirthDay = new Date(date).toDateString();
-console.log(gender);
-console.log(date);
 
   if (new Date(date) > new Date()) {
     alert("Birth date cannot be later than current date");
