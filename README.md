@@ -5,6 +5,8 @@
 #
 ## HERES A PREVIEW OF WHAT THE APPLICATION LOOKS LIKE 
 
+[Click here to generate your Akan Name](https://irene-mukii.github.io/wk2-akan-names/)
+
 [Video Demo](./images/akan-generator-demo.gif)
 
 #
@@ -17,6 +19,7 @@ Don't worry I know you probably dont remember the day, leave that to us.
 * You need Internet to generate your Akan name
 * You will also need to input your gender
 * Lastly you will need to input your date of birth
+* You will also need scripts.js ans styles.css to generate the names.
 #
 ## Behavior Driven Development
 This is how I broke down the problem statement to come up with this Amzing Application:
