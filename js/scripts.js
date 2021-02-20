@@ -9,20 +9,52 @@ let maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwam
     event.preventDefault()
     let gender = document.querySelector('input[name = gender]:checked').value;
     let date = document.getElementById('date').value;
+
     
     let myBirthDay = new Date(date).toDateString();
+    let currentDate = new Date().toDateString();
+    console.log(currentDate);
+    if (myBirthDay>currentDate) {
+      console.log("Birth date cannot be later than current date");
+    }
     let day = myBirthDay.split(' ')[0];
     let message = `Seeing as You were born on ${day} and you are ${gender}`;
     outputTag.innerHTML = message;
     let name;
+
     if(gender === 'male' ){
-      name = console.log(maleAkanNames);
+      if(day === 'Sun'){
+        name = console.log(maleAkanNames[0]);
+      } else if(day === 'Mon'){
+        name = console.log(maleAkanNames[1]);
+      } else if (day === 'Tue') {
+        name = console.log(maleAkanNames[2]);
+      } else if (day === 'Wed') {
+        name = console.log(maleAkanNames[3]);
+      } else if (day === 'Thu') {
+        name = console.log(maleAkanNames[4]);
+      } else if (day === 'Fri') {
+        name = console.log(maleAkanNames[5]);
+      } else {
+        name = console.log(maleAkanNames[6]);
+      }
     }else {
-      name = console.log(femaleAkanNames);
+      if (day === 'Sun') {
+        name = console.log(femaleAkanNames[0]);
+      } else if (day === 'Mon') {
+        name = console.log(femaleAkanNames[1]);
+      } else if (day === 'Tue') {
+        name = console.log(femaleAkanNames[2]);
+      } else if (day === 'Wed') {
+        name = console.log(femaleAkanNames[3]);
+      } else if (day === 'Thu') {
+        name = console.log(femaleAkanNames[4]);
+      } else if (day === 'Fri') {
+        name = console.log(femaleAkanNames[5]);
+      } else {
+      name = console.log(femaleAkanNames[6]);}
     }
-
     akanName.innerHTML = `Your akan Name is ${name}`; //change input
-
   }
   
 
@@ -73,9 +105,3 @@ let maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwam
 //     }
 // }
 
-// confirming that input is valid
-// function validateForm(){
-
-//   if (date <= 0 || date > 31 && month <= 0 || month>12) {
-//      alert('Please confirm the date and month is a valid one')}  
-// }
