@@ -1,21 +1,17 @@
 console.log("It works");
-
-  
   let outputTag = document.getElementById('output');
-  
-
-  
+  let akanName = document.getElementById('akanName');
 
   function getInput(event){
     event.preventDefault()
     let gender = document.querySelector('input[name = gender]:checked').value;
     let date = document.getElementById("date").value;
     
-    let myBirthDay = new Date('date').toDateString();
+    let myBirthDay = new Date(date).toDateString();
     let day = myBirthDay.split(' ')[0];
     let message = `Seeing as You were born on ${day} and you are ${gender}`;
     outputTag.innerHTML = message;
-
+    akanName.innerHTML = `Your akan Name is ${day}`; //change input
 
   }
   
