@@ -5,7 +5,7 @@
 #
 ## HERES A PREVIEW OF WHAT THE APPLICATION LOOKS LIKE 
 
-[Video Demo](/home/ronnie/Documents/moringa-school-projects/wk2-akan-names/images/akan-generator-demo.gif)
+[Video Demo](./images/akan-generator-demo.gif)
 
 #
 ## Description
@@ -45,4 +45,4 @@ If you have any concerns please reach outthrough the following platforms
 * EMAIL: abc@gmail.com 
 * PHONE NUMBER: 0707123567
 #
-## [License](/home/ronnie/Documents/moringa-school-projects/wk2-akan-names/LICENSE)
+## [License](./LICENSE)
