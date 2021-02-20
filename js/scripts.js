@@ -14,7 +14,14 @@ let maleAkanNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwam
     let day = myBirthDay.split(' ')[0];
     let message = `Seeing as You were born on ${day} and you are ${gender}`;
     outputTag.innerHTML = message;
-    akanName.innerHTML = `Your akan Name is ${day}`; //change input
+    let name;
+    if(gender === 'male' ){
+      name = console.log(maleAkanNames);
+    }else {
+      name = console.log(femaleAkanNames);
+    }
+
+    akanName.innerHTML = `Your akan Name is ${name}`; //change input
 
   }
   
